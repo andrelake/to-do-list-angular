@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="d-flex justify-content-between navbar w-100">
+    <span>To Do List App</span>
+    <button class="btn btn-secondary btn-lg" (click)="onClickInputMenu()">+</button>
+  </div>
+
+    <app-input-newtask class="d-flex card p-5 w-100" *ngIf="inputMenu">
+      <form name="input-form">
+        <div id="input-description">
+          <label for="input" class="labels">Add your task:</label>
+          <textarea class="pl-1 w-100" id="input"></textarea>
+        </div>
+        <div id="input-priority">
+          <label class="labels mt-5">Select the priority:</label><br/>
+          <label class="radio-labels">
+            <input type="radio">
+            High
+          </label>
+          <label class="radio-labels">
+            <input type="radio">
+            Medium
+          </label>
+          <label class="radio-labels">
+            <input type="radio">
+            Low
+          </label>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-dark btn-lg mt-5">Submit</button>
+        </div>
+      </form>
+    </app-input-newtask>
+
+</div>

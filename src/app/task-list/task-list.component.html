@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="card">
+    <ul class="list-group list-group-flush">
+      <li
+        class="list-group-item d-flex align-items-center justify-content-between p-4"
+        *ngFor="let task of taskList"
+      >
+        {{task.description}}
+        {{task.priority}}
+        <button class="btn btn-dark mr-4">X</button>
+      </li>
+    </ul>
+  </div>
+</div>
